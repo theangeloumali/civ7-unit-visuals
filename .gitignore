@@ -1,0 +1,5 @@
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+release/zk-unit-visuals/*.exe

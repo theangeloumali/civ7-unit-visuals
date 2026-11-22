@@ -25,3 +25,19 @@ Run `uninstall.bat` before you delete the unzipped folder. It removes only the f
 ## What the installer does
 
 It reads your game's own art files and writes patched copies to `%LOCALAPPDATA%\Firaxis Games\Sid Meier's Civilization VII\Overrides\Local`. Your game installation is never changed. Visual only: no gameplay change, safe for any save, works with DLC units.
+
+## Source
+
+Python 3, standard library only.
+
+| Path                              | What it is                                                                                            |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `tools/unit_visuals_installer.py` | The installer program: `install`, `uninstall`, `--refresh`                                            |
+| `tools/unit_scale.py`             | Scales units, adds figures and swaps formations; writes the overrides and the manifest uninstall uses |
+| `tools/blp_package.py`            | Reads and edits Civ VII `.blp` art packages                                                           |
+| `tools/civ7_paths.py`             | Finds the game through Steam on any drive                                                             |
+| `tools/unit_sizes.json`           | Every size, figure count and formation setting ([mapping](docs/unit-visuals-mapping.md))              |
+| `tools/build_installer.py`        | Builds the exe and the release zip (run with Windows Python; installs PyInstaller)                    |
+| `release/zk-unit-visuals/`        | The `.bat` files and README that ship in the zip                                                      |
+
+Run the tests with `python -m pytest tests` (tests that read real game files skip when the game isn't installed). Run from source on Windows with `python tools\unit_visuals_installer.py install`.
