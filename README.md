@@ -40,4 +40,4 @@ Python 3, standard library only.
 | `tools/build_installer.py`        | Builds the exe and the release zip (run with Windows Python; installs PyInstaller)                    |
 | `release/zk-unit-visuals/`        | The `.bat` files and README that ship in the zip                                                      |
 
-Run the tests with `python -m pytest tests` (tests that read real game files skip when the game isn't installed). Run from source on Windows with `python tools\unit_visuals_installer.py install`.
+Run the tests with `python -m pytest tests`; on Windows they need the game installed, because the tools locate it on import. Run from source on Windows with `python tools\unit_visuals_installer.py install`.
