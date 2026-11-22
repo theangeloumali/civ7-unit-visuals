@@ -1,4 +1,4 @@
-# ZKidz Unit Visuals for Civilization VII
+# R.E.D ZKidz: Mass Armies Unit Visual
 
 Smaller units in larger numbers, so the map looks like armies instead of giant figurines.
 
