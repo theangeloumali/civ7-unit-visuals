@@ -1,4 +1,4 @@
-# R.E.D ZKidz: Mass Armies Unit Visual
+# R.E.D ZKidz: Unit Visuals
 
 Smaller units in larger numbers, so the map looks like armies instead of giant figurines.
 
