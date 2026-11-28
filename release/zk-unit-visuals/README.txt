@@ -1,5 +1,5 @@
-R.E.D ZKidz: Mass Armies Unit Visual
-====================================
+R.E.D ZKidz: Unit Visuals
+=========================
 
 Smaller units in larger numbers. Civilization VII only loads unit art from its own
 Overrides folder, never from a mod folder, so this mod comes as an installer.

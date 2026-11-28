@@ -10,7 +10,7 @@ import sys
 import zipfile
 from pathlib import Path
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 TOOLS = Path(__file__).resolve().parent
 REPO = TOOLS.parent
 STAGING = REPO / "release" / "zk-unit-visuals"
